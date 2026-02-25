@@ -1,164 +1,268 @@
-# Customer Relationship Management (CRM) application - MERN
+# 🚀 Customer Relationship Management (CRM) Application – MERN Stack
 
-A Customer Relationship Management (CRM) application using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+A full-stack **Customer Relationship Management (CRM)** application built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**.
 
-This project demonstrates full-stack development skills including authentication, database connectivity, API development, frontend integration, and deployment.
+This project demonstrates full-stack development skills including authentication, REST API development, database integration, protected routes, and deployment.
 
-## screen recording 
-- https://drive.google.com/drive/folders/1D15L7bqu6PSuJG97QHDM-1Gri-FqiGCF?usp=sharing
+---
 
-## hostedLink 
-- frontend - https://mern-integration-eela.vercel.app/
-- backend - https://mern-integration-olive.vercel.app/
+## 🔗 Live Demo
 
-# 🚀 Project Overview
+🎥 **Screen Recording**  
+https://drive.google.com/drive/folders/1D15L7bqu6PSuJG97QHDM-1Gri-FqiGCF?usp=sharing
 
-- The CRM application allows users to:
+🌐 **Hosted Application**
 
-- - Register and log in securely
-- - Manage customer records
-- - Perform full CRUD operations
-- - Experience a responsive user interface
-- - Work with a fully integrated MERN stack architecture
+- **Frontend:** https://mern-integration-eela.vercel.app/
+- **Backend:** https://mern-integration-olive.vercel.app/
+
+---
+
+# 📌 Project Overview
+
+This CRM application allows users to:
+
+- 🔐 Register and log in securely
+- 👥 Manage customer records
+- ➕ Add new customers
+- ✏️ Update customer details
+- 🗑 Delete customers
+- 📋 View a list of all customers
+- 🔒 Access protected routes using JWT authentication
+- 📱 Use a responsive and modern UI
+
+---
 
 # 🛠️ Tech Stack
 
-## Frontend
+## 🎨 Frontend
 
-- React(vite)
-- Tailwind css
+- React (Vite)
+- Tailwind CSS
 - Axios
 - React Router DOM
 - React Icons
 
-
-## Backend
+## ⚙️ Backend
 
 - Node.js
 - Express.js
-- MongoDB(Mongoose)
+- MongoDB (Mongoose)
 - JWT (Authentication)
 - bcrypt
 - CORS
 
-## 🔐 Features Implemented
+---
 
-✅ User Authentication
+# 🔐 Features Implemented
 
-User Registration
-User Login
-JWT-based authentication
-Protected routes
+## ✅ User Authentication
 
-✅ CRM Functionality
+- User Registration
+- User Login
+- Password Hashing using bcrypt
+- JWT-based Authentication
+- Protected API Routes
 
-Add new customers
-View customer list
-Update customer details
-Delete customers
+## ✅ CRM Functionality
 
-✅ Database Connectivity
+- Add new customers
+- View customer list
+- Update customer details
+- Delete customers
+- Full CRUD operations
 
-MongoDB connection using Mongoose
-Customer schema
-User schema
+## ✅ Database Integration
 
-✅ Error Handling & Validation
+- MongoDB connection using Mongoose
+- Customer Schema
+- User Schema
+- Secure data storage
 
-Input validation
-Proper error responses
-Authentication middleware
+## ✅ Error Handling & Validation
 
-# ⚙️ Installation & Setup
+- Input validation
+- Proper error responses
+- Authentication middleware
+- Protected endpoints
 
-1️⃣ Clone the Repository
+---
 
-cd crm-mern-integration
+# ⚙️ Installation & Setup (Local Development)
 
-2️⃣ Install Dependencies
+## 1️⃣ Clone the Repository
 
-- Backend
+```bash
+git clone https://github.com/Vidhyashankarrr/mern_integration.git
+cd mern_integration
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+### 🔹 Backend
+
+```bash
 cd server
 npm install
+```
 
-- Frontend
+### 🔹 Frontend
+
+```bash
 cd ../client
 npm install
-3️⃣ Configure Environment Variables
+```
 
-🔹 Backend (.env inside /backend)
+---
+
+## 3️⃣ Configure Environment Variables
+
+### 🔹 Backend (.env inside /server)
+
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=4000
-🔹 Frontend (.env inside /frontend/crmsystem)
+```
 
-Since this project uses Vite, environment variables must start with VITE_.
+### 🔹 Frontend (.env inside /client)
 
+Since this project uses Vite, environment variables must start with `VITE_`.
+
+```
 VITE_API_URL=http://localhost:4000
+```
 
-4️⃣ Run the Application
-- Start Backend
+---
+
+## 4️⃣ Run the Application
+
+### ▶️ Start Backend
+
+```bash
 cd server
 npm run dev
+```
 
-- Start Frontend
+### ▶️ Start Frontend
+
+```bash
 cd client
 npm run dev
+```
+
+---
 
 # 🔗 API Endpoints
-## Authentication
 
-- POST /api/register
-- POST /api/login
+## 🔐 Authentication
 
-## Customers
+- `POST /api/register`
+- `POST /api/login`
 
-- GET /api/customers
-- POST /api/customers
-- PUT /api/customers/:id
-- DELETE /api/customers/:id
+## 👥 Customers (Protected Routes)
 
-## 🧪 Testing
+- `GET /api/customers`
+- `POST /api/customers`
+- `PUT /api/customers/:id`
+- `DELETE /api/customers/:id`
+
+---
+
+# 🧪 Testing
 
 - API tested using Postman
 - Frontend tested manually through browser
+- JWT authentication verified for protected routes
 
-## 🌍 Deployment
+---
 
-🚀 Deployment (Vercel)
+# 🌍 Deployment (Vercel)
 
-This project is configured for easy deployment on Vercel.
+This project is configured for deployment on **Vercel**.
 
-1️⃣ Push to GitHub
+---
 
-Push your complete project (both client and server folders) to a GitHub repository.
+## 1️⃣ Deploy Backend
 
-2️⃣ Deploy the Backend
-
-- Go to Vercel Dashboard → Click Add New Project
+- Go to Vercel Dashboard → **Add New Project**
 - Import your GitHub repository
-- Set the Root Directory to: server
-- Add the following Environment Variables in Vercel:
+- Set Root Directory to:
 
+```
+server
+```
+
+- Add Environment Variables:
+
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=4000
+```
 
 - Click Deploy
-- Vercel will automatically detect the configuration and use the vercel.json file (if provided).
-- After deployment, you will get a backend URL like: https://your-backend-name.vercel.app
+- After deployment, you will receive a backend URL:
 
-3️⃣ Deploy the Frontend
+```
+https://your-backend-name.vercel.app
+```
 
-- Create another New Project in Vercel
+---
+
+## 2️⃣ Deploy Frontend
+
+- Create another new project in Vercel
 - Import the same GitHub repository
-- Set the Root Directory to:
-- client
-- Add the following environment variable:
+- Set Root Directory to:
 
+```
+client
+```
+
+- Add Environment Variable:
+
+```
 VITE_API_URL=https://your-backend-name.vercel.app
+```
 
 - Click Deploy
 
+---
 
-# mern_integration
+# 📂 Project Structure
+
+```
+mern_integration/
+│
+├── client/        # React Frontend
+│
+├── server/        # Express Backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── config/
+│   └── index.js
+│
+└── README.md
+```
+
+---
+
+# 👨‍💻 Author
+
+Developed as a full-stack MERN project to demonstrate:
+
+- Authentication implementation
+- Secure API development
+- Database integration
+- Deployment workflow
+- End-to-end full-stack architecture
+
+---
+
+# 📄 License
+
+This project is developed for educational and portfolio purposes.
