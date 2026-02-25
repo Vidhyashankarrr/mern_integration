@@ -8,8 +8,8 @@ This project demonstrates full-stack development skills including authentication
 - https://drive.google.com/file/d/1DAnL7neICYUcWcHZbqmnuglzhBZQhU3z/view?usp=sharing
 
 ## hostedLink 
-- frontend - https://crm-mern-integration-ruby.vercel.app/
-- backend - https://crm-mern-integration-zs4p.vercel.app/
+- frontend - https://mern-integration-eela.vercel.app/
+- backend - https://mern-integration-olive.vercel.app/
 
 # 🚀 Project Overview
 
@@ -72,7 +72,7 @@ Authentication middleware
 # ⚙️ Installation & Setup
 
 1️⃣ Clone the Repository
-git clone https://github.com/Shabnapm99/crm-mern-integration
+
 cd crm-mern-integration
 
 2️⃣ Install Dependencies
