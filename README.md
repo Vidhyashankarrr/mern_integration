@@ -5,7 +5,7 @@ A Customer Relationship Management (CRM) application using the MERN stack (Mongo
 This project demonstrates full-stack development skills including authentication, database connectivity, API development, frontend integration, and deployment.
 
 ## screen recording 
-- https://drive.google.com/file/d/1DAnL7neICYUcWcHZbqmnuglzhBZQhU3z/view?usp=sharing
+- https://drive.google.com/drive/folders/1D15L7bqu6PSuJG97QHDM-1Gri-FqiGCF?usp=sharing
 
 ## hostedLink 
 - frontend - https://mern-integration-eela.vercel.app/
